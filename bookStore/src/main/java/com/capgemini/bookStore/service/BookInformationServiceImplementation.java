@@ -10,7 +10,7 @@ import com.capgemini.bookStore.entity.BookInformation;
 import com.capgemini.bookStore.exception.BookInformationException;
 
 @Transactional
-@Service("BookInformationService")	
+@Service("BookInformationService")
 public class BookInformationServiceImplementation implements BookInformationService {
 	@Autowired
 	private BookInformationDao bookInformationDao;

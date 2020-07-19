@@ -15,11 +15,13 @@ import com.capgemini.bookStore.service.BookInformationService;
 @CrossOrigin
 @RestController
 public class BookInformationController {
-	
+
 	@Autowired
 	private BookInformationService bookInformationService;
-	@GetMapping("/getUserById/{userId}")
-	public ResponseEntity<Object> getBookInformationById(@PathVariable("bookId") int bookId) throws BookInformationException {
+
+	@GetMapping("/getBookById/{bookId}")
+	public ResponseEntity<Object> getBookInformationById(@PathVariable("bookId") int bookId)
+			throws BookInformationException {
 		BookInformation book = bookInformationService.findById(bookId);
 		if (book != null) {
 			return new ResponseEntity<Object>(book, HttpStatus.OK);
