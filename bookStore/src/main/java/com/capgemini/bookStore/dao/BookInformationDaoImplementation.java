@@ -5,7 +5,12 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
 import com.capgemini.bookStore.entity.BookInformation;
-
+/************************************************************************************
+ *          @author          Sohaib Khan
+ *          Description      It is a dao class that provides the book information
+ *          Version          1.0
+ *          Created Date     16-JULY-2020
+ ************************************************************************************/
 @Repository("BookInformationDao")
 public class BookInformationDaoImplementation implements BookInformationDao {
 	@PersistenceContext

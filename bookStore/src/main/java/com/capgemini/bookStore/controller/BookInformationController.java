@@ -11,7 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.capgemini.bookStore.entity.BookInformation;
 import com.capgemini.bookStore.exception.BookInformationException;
 import com.capgemini.bookStore.service.BookInformationService;
-
+/************************************************************************************
+ *          @author          Sohaib Khan
+ *          Description      It is a controller class that provides request methods
+ *          Version          1.0
+ *          Created Date     16-JULY-2020
+ ************************************************************************************/
 @CrossOrigin
 @RestController
 public class BookInformationController {
