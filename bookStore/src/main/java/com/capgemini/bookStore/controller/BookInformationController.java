@@ -1,4 +1,6 @@
-package com.capgemini.bookStore.controller;
+package com.cg.onlinebook.contoller;
+
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,9 +10,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.capgemini.bookStore.entity.BookInformation;
-import com.capgemini.bookStore.exception.BookInformationException;
-import com.capgemini.bookStore.service.BookInformationService;
+import com.cg.book.entity.BookInformation;
+import com.cg.book.exceptions.BookInformationException;
+import com.cg.book.service.BookInformationService;
+
 /************************************************************************************
  *          @author          Sohaib Khan
  *          Description      It is a controller class that provides request methods
@@ -34,3 +37,4 @@ public class BookInformationController {
 		return new ResponseEntity<Object>(HttpStatus.NOT_FOUND);
 	}
 }
+
